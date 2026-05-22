@@ -1,3 +1,5 @@
+import PageTransition from "@/components/PageTransition"
+
 export default function Parcours() {
     const Exp = [
         {
@@ -39,6 +41,7 @@ export default function Parcours() {
     ]
 
     return (
+        <PageTransition>
         <div className="px-6 py-10 md:px-20 md:py-16 max-w-4xl">
             <h1 className="text-[40px] md:text-[60px] font-bold leading-none mb-2">Parcours.</h1>
             <p className="text-gray-400 mb-10 text-base">D'où je viens, ce que j'ai fait.</p>
@@ -78,5 +81,6 @@ export default function Parcours() {
                 </div>
             </div>
         </div>
+        </PageTransition>
     )
 }

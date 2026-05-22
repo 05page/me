@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider"
 // import { ModeToggle } from "./components/mode-toggle"
 import SideBar from "./components/sidebar"
+import MobileNav from "./components/MobileNav"
 import Accueil from "./pages/Accueil";
 import Parcours from "./pages/Parcours";
 import Projets from "./pages/Projets";
@@ -19,6 +20,7 @@ function App() {
           <SideBar />
         </div>
         <main className="flex-1 overflow-y-auto">
+          <MobileNav />
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/parcours" element={<Parcours />} />

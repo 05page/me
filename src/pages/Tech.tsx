@@ -1,4 +1,5 @@
 import type { JSX } from "react"
+import PageTransition from "@/components/PageTransition"
 import { FaReact, FaNodeJs, FaGitAlt, FaGithub, FaFigma } from "react-icons/fa"
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiLaravel, SiPostgresql, SiMysql, SiVercel } from "react-icons/si"
 
@@ -27,6 +28,7 @@ const techs: Record<string, string[]> = {
 
 export default function Tech() {
     return (
+        <PageTransition>
         <div className="px-6 py-10 md:px-20 md:py-16 max-w-4xl">
             <h1 className="text-[40px] md:text-[60px] font-bold leading-none mb-2">Compétences.</h1>
             <p className="text-gray-400 mb-10 text-base">Ce que j'ai entre les mains au quotidien.</p>
@@ -51,5 +53,6 @@ export default function Tech() {
                 ))}
             </div>
         </div>
+        </PageTransition>
     )
 }
