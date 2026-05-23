@@ -1,9 +1,12 @@
 import { motion } from "framer-motion"
-import { FaReact, FaPhp } from "react-icons/fa"
+import { FaReact, FaPhp, FaLaravel } from "react-icons/fa"
+import { RiNextjsFill } from "react-icons/ri";
 import { SiJavascript, SiTypescript, SiNodedotjs } from "react-icons/si"
 /* Icônes de technos avec position et couleur */
 const techIcons = [
     { icon: <FaReact size={32} />,       color: "#61DAFB", left: "75%", top: "15%" },
+    { icon: <FaLaravel size={30} />,       color: "red", left: "85%", top: "15%" },
+    { icon: <RiNextjsFill size={30} />,       color: "black", left: "90%", top: "15%" },
     { icon: <SiJavascript size={28} />,  color: "#F7DF1E", left: "85%", top: "40%" },
     { icon: <FaPhp size={34} />,         color: "#777BB4", left: "70%", top: "65%" },
     { icon: <SiTypescript size={28} />,  color: "#3178C6", left: "88%", top: "70%" },
