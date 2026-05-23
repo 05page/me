@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaReact, FaNodeJs } from "react-icons/fa"
 import { SiPostgresql, SiSocketdotio, SiNextdotjs, SiMysql, SiTailwindcss, SiLaravel } from "react-icons/si"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import FloatingCode from "@/components/FloatingCode";
 
 /* Type d'un projet */
 type Projet = {
@@ -71,6 +72,7 @@ export default function Projets() {
     return (
         <PageTransition>
         <div className="px-6 py-10 md:px-20 md:py-16 max-w-4xl">
+            <FloatingCode />
             <h1 className="text-[40px] md:text-[60px] font-bold leading-none mb-2">Projets.</h1>
             <p className="text-gray-400 mb-10 text-base">Quelques projets que j'ai conçus récemment.</p>
 

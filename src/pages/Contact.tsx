@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import type { JSX } from "react"
 import PageTransition from "@/components/PageTransition"
+import FloatingCode from "@/components/FloatingCode";
 
 type Social = {
     nom: string
@@ -35,6 +36,7 @@ export default function Contact() {
     return (
         <PageTransition>
         <div className="px-6 py-10 md:px-20 md:py-16 max-w-2xl">
+            <FloatingCode />
             <h1 className="text-[44px] md:text-[72px] font-bold leading-none mb-3">Parlons-en.</h1>
             <p className="text-gray-400 mb-10 text-base">
                 CDD,CDI, freelance, la boite de réception est ouverte.

@@ -12,13 +12,6 @@ const NAV_ITEMS = [
     { label: "Contact", to: "/contact" },
 ]
 
-/**
- * MobileNav — barre de navigation mobile.
- * Affiche un bouton hamburger (☰) fixé en haut à droite,
- * uniquement sur mobile (md:hidden).
- * Au clic, ouvre un drawer coulissant depuis la gauche
- * avec les mêmes liens que la sidebar desktop.
- */
 export default function MobileNav() {
     // Contrôle l'ouverture / fermeture du drawer
     const [open, setOpen] = useState(false)
