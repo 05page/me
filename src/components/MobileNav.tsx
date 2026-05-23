@@ -19,13 +19,13 @@ export default function MobileNav() {
 
     return (
         <>
-            {/* ── Bouton hamburger ── visible seulement sur mobile */}
+            {/* ── Bouton unique fixé en haut à droite ── bascule ☰ / ✕ */}
             <button
-                onClick={() => setOpen(true)}
-                className="fixed top-4 right-4 z-50 md:hidden flex items-center justify-center w-10 h-10 border border-[#1a1a1a] rounded-md bg-white shadow-sm"
-                aria-label="Ouvrir le menu"
+                onClick={() => setOpen(!open)}
+                className="fixed top-4 right-4 z-60 md:hidden flex items-center justify-center w-10 h-10 border border-[#1a1a1a] rounded-md bg-white shadow-sm"
+                aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
             >
-                <MenuIcon size={20} />
+                {open ? <XIcon size={20} /> : <MenuIcon size={20} />}
             </button>
 
             {/* ── Drawer + Overlay ── AnimatePresence gère le montage/démontage */}
@@ -51,21 +51,12 @@ export default function MobileNav() {
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                             className="fixed left-0 top-0 h-full w-72 bg-white z-50 flex flex-col py-8 px-6 md:hidden"
                         >
-                            {/* En-tête : logo + bouton fermer */}
-                            <div className="flex items-center justify-between mb-9">
-                                <div className="flex items-center gap-2.5">
-                                    <div className="w-7.5 h-7.5 flex justify-center items-center border border-[#1a1a1a] rounded-md">
-                                        <span className="font-bold text-sm">JD</span>
-                                    </div>
-                                    <span className="text-sm">Jean David</span>
+                            {/* En-tête : logo seulement (le bouton fermer est le bouton fixe) */}
+                            <div className="flex items-center gap-2.5 mb-9">
+                                <div className="w-7.5 h-7.5 flex justify-center items-center border border-[#1a1a1a] rounded-md">
+                                    <span className="font-bold text-sm">JD</span>
                                 </div>
-                                <button
-                                    onClick={() => setOpen(false)}
-                                    aria-label="Fermer le menu"
-                                    className="hover:text-gray-500 transition-colors"
-                                >
-                                    <XIcon size={20} />
-                                </button>
+                                <span className="text-sm">Jean David</span>
                             </div>
 
                             {/* Liens de navigation */}
