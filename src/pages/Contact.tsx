@@ -22,7 +22,7 @@ export default function Contact() {
         {
             nom: "LinkedIn",
             handle: "Dibi Jean David",
-            lien: "https://linkedin.com/in/dibi-jean-david",
+            lien: "https://www.linkedin.com/in/jean-david-dibi-0216a3287/",
             icone: <FaLinkedin size={22} />
         },
         {

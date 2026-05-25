@@ -61,7 +61,7 @@ export default function SideBar() {
                 <a href="https://github.com/05page" target="_blank" rel="noreferrer" className="hover:text-[#fef08a] transition-colors">
                     <GithubIcon size={18} />
                 </a>
-                <a href="https://linkedin.com/in/dibi-jean-david" target="_blank" rel="noreferrer" className="hover:text-[#fef08a] transition-colors">
+                <a href="https://www.linkedin.com/in/jean-david-dibi-0216a3287/" target="_blank" rel="noreferrer" className="hover:text-[#fef08a] transition-colors">
                     <LinkedinIcon size={18} />
                 </a>
                 <a href="mailto:d.jeandavidr@gmail.com" className="hover:text-[#fef08a] transition-colors">
