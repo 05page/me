@@ -4,29 +4,41 @@ import PageTransition from "@/components/PageTransition"
 export default function Parcours() {
     const Exp = [
         {
-            annee: "Jan 2026 – En cours",
+            annee: "Fév. 2026 · Freelance",
             post: "Développeur Full Stack",
-            structure: "Medev (Start-up)",
-            description: "Intégration en tant que développeur Full Stack au sein de la start-up."
+            structure: "Mon Plat",
+            description: "Développement full stack d'une application mobile de restauration : conception des API REST (commandes, plats), design de l'interface mobile et mise en relation vendeurs/clients avec portefeuille électronique intégré."
         },
         {
-            annee: "Déc 2025",
-            post: "Développeur Full Stack Freelance",
+            annee: "Jan. – Mai 2026 · Freelance",
+            post: "Développeur Full Stack",
+            structure: "CasseBaby",
+            description: "Conception et développement d'une marketplace de pièces détachées automobiles pour le marché ivoirien — recherche par marque et modèle de véhicule, connectant particuliers et professionnels."
+        },
+        {
+            annee: "Jan. – Mars 2026 · Freelance",
+            post: "Développeur Backend",
             structure: "Black Agence",
-            description: "Développement du SaaS Black Immobilier — plateforme de gestion immobilière multi-tenant pour agences (biens, locataires, paiements, quittances)."
+            description: "Développement des API de gestion des propriétaires, biens immobiliers, locataires et locations pour le SaaS Black Immobilier — plateforme multi-tenant dédiée aux agences immobilières."
         },
         {
-            annee: "Mars 2025 – Sept. 2025",
+            annee: "Oct. 2024 – En cours · Freelance",
+            post: "Développeur Full Stack",
+            structure: "Move CI",
+            description: "Modélisation de la base de données, développement des API, conception de l'interface utilisateur et déploiement d'une marketplace automobile pour le marché ivoirien."
+        },
+        {
+            annee: "Mars – Sept. 2025 · Stage",
             post: "Stagiaire Développeur",
-            structure: "Propulse Group",
-            description: "Collaboration avec l'équipe pour l'intégration de contenus. Optimisation des performances et sécurité des sites."
+            structure: "Propulse Group · CGRAE",
+            description: "Maintenance et mise à jour de l'application web de la CGRAE (Caisse Générale de Retraite des Agents de l'État)."
         },
     ]
 
     const Formations = [
         {
-            annee: "Fév. 2026",
-            diplome: "Certificat JavaScript",
+            annee: "2026",
+            diplome: "Certificat Développeur JavaScript",
             ecole: "Udemy"
         },
         {
@@ -35,8 +47,8 @@ export default function Parcours() {
             ecole: "Université Virtuelle de Côte d'Ivoire"
         },
         {
-            annee: "2023",
-            diplome: "Certificat Dev Fullstack",
+            annee: "2024",
+            diplome: "Certificat Développeur Full Stack",
             ecole: "Simplon Côte d'Ivoire"
         },
     ]
