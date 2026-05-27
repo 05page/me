@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import PageTransition from "@/components/PageTransition"
 import { useState } from "react";
 import { FaReact, FaNodeJs } from "react-icons/fa"
-import { SiPostgresql, SiSocketdotio, SiNextdotjs, SiMysql, SiTailwindcss, SiLaravel, SiNuxtdotjs, SiFirebase } from "react-icons/si"
+import { SiPostgresql, SiSocketdotio, SiNextdotjs, SiMysql, SiTailwindcss, SiLaravel, SiNuxt, SiFirebase } from "react-icons/si"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import FloatingCode from "@/components/FloatingCode";
 
@@ -26,7 +26,7 @@ const techIcons: Record<string, JSX.Element> = {
     "PostgreSQL":   <SiPostgresql />,
     "Socket.io":    <SiSocketdotio />,
     "Next.js":      <SiNextdotjs />,
-    "Nuxt.js":      <SiNuxtdotjs />,
+    "Nuxt.js":      <SiNuxt />,
     "Laravel":      <SiLaravel />,
     "MySQL":        <SiMysql />,
     "Tailwind":     <SiTailwindcss />,
