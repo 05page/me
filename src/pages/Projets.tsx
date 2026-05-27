@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import PageTransition from "@/components/PageTransition"
 import { useState } from "react";
 import { FaReact, FaNodeJs } from "react-icons/fa"
-import { SiPostgresql, SiSocketdotio, SiNextdotjs, SiMysql, SiTailwindcss, SiLaravel } from "react-icons/si"
+import { SiPostgresql, SiSocketdotio, SiNextdotjs, SiMysql, SiTailwindcss, SiLaravel, SiNuxtdotjs, SiFirebase } from "react-icons/si"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import FloatingCode from "@/components/FloatingCode";
 
@@ -14,8 +14,8 @@ type Projet = {
     techs: string[]
     lien: string
     image: string
-    github: string
-    demo?: string  // optionnel — pas dispo partout
+    github?: string  // optionnel — repo privé ou non renseigné
+    demo?: string    // optionnel — pas dispo partout
     statut: string
 }
 
@@ -26,9 +26,11 @@ const techIcons: Record<string, JSX.Element> = {
     "PostgreSQL":   <SiPostgresql />,
     "Socket.io":    <SiSocketdotio />,
     "Next.js":      <SiNextdotjs />,
+    "Nuxt.js":      <SiNuxtdotjs />,
     "Laravel":      <SiLaravel />,
     "MySQL":        <SiMysql />,
     "Tailwind":     <SiTailwindcss />,
+    "Firebase":     <SiFirebase />,
 }
 
 export default function Projets() {
@@ -63,6 +65,16 @@ export default function Projets() {
             image: "/monplat.png",
             github: "https://github.com/05page/mon-plat.git",
             statut: "En developpement"
+        },
+        {
+            id: 4,
+            titre: "CasseBaby",
+            description: "Marketplace de pièces détachées automobiles pour le marché ivoirien — connectant particuliers et professionnels avec recherche par marque et modèle de véhicule.",
+            techs: ["Nuxt.js", "Node.js", "Socket.io", "Firebase"],
+            lien: "#",
+            image: "/cassebaby.png",
+            demo: "https://cassebaby.ci",
+            statut: "Déployé"
         },
     ]
 
@@ -165,10 +177,12 @@ export default function Projets() {
 
                     {/* Liens */}
                     <div className="flex gap-4 pt-2">
-                        <a href={selected?.github} target="_blank" rel="noreferrer"
-                            className="text-sm border border-[#1a1a1a] rounded-md px-4 py-1.5 hover:bg-[#fef08a] transition-colors">
-                            GitHub →
-                        </a>
+                        {selected?.github && (
+                            <a href={selected.github} target="_blank" rel="noreferrer"
+                                className="text-sm border border-[#1a1a1a] rounded-md px-4 py-1.5 hover:bg-[#fef08a] transition-colors">
+                                GitHub →
+                            </a>
+                        )}
                         {selected?.demo && (
                             <a href={selected.demo} target="_blank" rel="noreferrer"
                                 className="text-sm border border-[#1a1a1a] rounded-md px-4 py-1.5 hover:bg-[#fef08a] transition-colors">
