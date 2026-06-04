@@ -42,10 +42,10 @@ export default function Accueil() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="text-base md:text-lg text-gray-500 leading-relaxed max-w-xl mb-10"
                     >
-                        Je suis un jeune passionné par les nouvelles technologies.
-                        J'ai travaillé sur des projets front-end et back-end, aussi bien
-                        pour des entreprises que sur des projets personnels. Travailleur,
-                        ambitieux et bon communicant, je m'adapte facilement à tout environnement.
+                        Développeur Full-Stack passionné par les nouvelles technologies.
+                        J'ai travaillé sur plusieurs projets à valeur ajoutée pour des entreprises.
+                        Travailleur, ambitieux, rigoureux et bon communicant,
+                        je m'adapte facilement à tout environnement et à toute équipe.
                     </motion.p>
 
                     {/* Boutons CTA */}
