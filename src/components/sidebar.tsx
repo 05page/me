@@ -6,7 +6,7 @@ const NAV_ITEMS = [
     { label: "Accueil", to: "/" },
     { label: "Parcours", to: "/parcours" },
     { label: "Projets", to: "/projets" },
-    { label: "Tech", to: "/tech" },
+    { label: "Compétences", to: "/tech" },
     { label: "Contact", to: "/contact" },
 ]
 
