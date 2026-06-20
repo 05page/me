@@ -49,7 +49,7 @@ export default function SideBar() {
 
             {/* Bouton télécharger CV */}
             <a
-                href="/Dibi jean david raymond.pdf"
+                href="/CV-Dibi-Jean-David.pdf"
                 download
                 className="mt-auto mb-4 flex items-center justify-center gap-2 py-2 px-4 border border-[#1a1a1a] rounded-md text-sm hover:bg-[#fef08a] transition-colors"
             >
