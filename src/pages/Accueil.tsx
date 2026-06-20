@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const STATS = [
     { valeur: "2 ans", label: "d'expérience" },
-    { valeur: "3",     label: "projets livrés" },
+    { valeur: "2",     label: "projets livrés" },
     { valeur: "2+",    label: "technos maîtrisées" },
 ]
 
