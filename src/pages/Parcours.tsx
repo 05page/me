@@ -38,17 +38,17 @@ export default function Parcours() {
     const Formations = [
         {
             annee: "Fév. 2026",
-            diplome: "Certification Développeur JavaScript",
+            diplome: "Certificat Développeur JavaScript",
             ecole: "Udemy"
         },
+        // {
+        //     annee: "Juill. 2025",
+        //     diplome: "Licence Développeur d'application & e-service",
+        //     ecole: "Université Virtuelle de Côte d'Ivoire"
+        // },
         {
-            annee: "Juill. 2025",
-            diplome: "Licence Informatique",
-            ecole: "Université Virtuelle de Côte d'Ivoire"
-        },
-        {
-            annee: "Juin 2024",
-            diplome: "Certification Développeur Full Stack",
+            annee: "Juill. 2024",
+            diplome: "Certificat Développeur Full Stack",
             ecole: "Simplon Côte d'Ivoire"
         },
         {
