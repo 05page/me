@@ -113,12 +113,23 @@ export default function Projets() {
             lien: "#",
             image: "/blackimmo.png",
             github: "https://github.com/05page/black-immo.git",
+            statut: "Suspendu",
+            categorie: "pro"
+        },
+        {
+            id: 3,
+            titre: "Andoma",
+            description: "Plateforme e-commerce pensée pour le marché ivoirien — vente en ligne avec intégration des moyens de paiement locaux (mobile money) et gestion des commandes.",
+            techs: ["Next.js", "Nest Js", "Supabase"],
+            lien: "#",
+            image: "/andoma.png",
+            github: "#",
             statut: "En développement",
             categorie: "pro"
         },
         /* ── Projets personnels ── */
         {
-            id: 3,
+            id: 4,
             titre: "Move CI",
             description: "Marketplace automobile pour acheter, vendre et louer des véhicules en Côte d'Ivoire — messagerie temps réel, transactions sécurisées.",
             techs: ["React", "Node.js", "PostgreSQL", "Socket.io"],
@@ -126,17 +137,6 @@ export default function Projets() {
             image: "/moveci.png",
             github: "https://github.com/05page/moveci.git",
             demo: "https://moveci.vercel.app",
-            statut: "Déployé",
-            categorie: "perso"
-        },
-        {
-            id: 4,
-            titre: "Mon Plat",
-            description: "Application mobile de mise en relation vendeurs/clients pour la restauration en Côte d'Ivoire — publication de plats, commandes en ligne et portefeuille électronique intégré.",
-            techs: ["React Native", "Node.js", "PostgreSQL"],
-            lien: "#",
-            image: "/monplat.png",
-            github: "https://github.com/05page/mon-plat.git",
             statut: "En développement",
             categorie: "perso"
         },
